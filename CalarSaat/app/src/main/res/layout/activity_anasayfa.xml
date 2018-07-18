@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hsn07.calarsaat.Anasayfa">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="+"
+            tools:layout_editor_absoluteX="351dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal|center_vertical"/>
+
+        <ImageButton
+            android:id="@+id/imgbekle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@android:color/white"
+            app:srcCompat="@drawable/alarm1"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/btnbildirim"
+            android:layout_toLeftOf="@+id/imgstop"
+            android:layout_toStartOf="@+id/imgstop" />
+
+        <ImageView
+            android:id="@+id/imgstop"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_above="@+id/lvalarmlistesi"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/imgdelete"
+            android:layout_toStartOf="@+id/imgdelete"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/alarm2" />
+
+        <ImageView
+            android:id="@+id/imgdelete"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_above="@+id/lvalarmlistesi"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/rubbish"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <ListView
+            android:id="@+id/lvalarmlistesi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imgbekle"
+            android:layout_marginTop="13dp" />
+
+        <EditText
+            android:id="@+id/etid"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="No"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imgbekle" />
+
+        <Button
+            android:id="@+id/btnbildirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bildirim"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/radioGroup"
+            android:layout_toStartOf="@+id/radioGroup" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="-24dp"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@+id/btnbildirim"
+            android:layout_alignRight="@+id/imgdelete"
+            android:layout_alignEnd="@+id/imgdelete"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="   1"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="   3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnset"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Button"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AYARLAR"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

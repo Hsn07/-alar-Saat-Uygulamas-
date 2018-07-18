@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:switchTextOff="BİLDİRİM"
+        android:switchTextOn="ALARM"
+        android:title="Hatırlatma Biçimi" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_box_preference_1"
+        android:title="Seçenek" />
+    <RingtonePreference
+        android:defaultValue="Sessiz"
+        android:key="zilsesi"
+        android:title="Ringtone preference" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_2"
+        android:title="Switch preference" />
+
+
+</PreferenceScreen>
